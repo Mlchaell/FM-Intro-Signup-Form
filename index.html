@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles.css">
+
+  <title>Frontend Mentor | Intro component with sign up form</title>
+</head>
+<body>
+  <main>
+    <section class="sect1">
+      <h1 class="sect1__header">Learn to code by watching others</h1>
+      <p class="sect1__text">See how experienced developers solve problems in real-time. Watching scripted tutorial is great, but understanding how developers think is invaluable.</p>
+    </section>
+
+    <section class="sect2">
+      <div class="sect2__banner">
+        <p><span>Try it free 7 days</span> then $20/mo. thereafter</p>
+      </div>
+
+      <div class="sect2__signup-form">
+        <form class="signup-form">
+          <input class="field firstname" type="text" placeholder="First Name">
+          <span class="hidden error error__firstname-empty">First Name cannot be empty</span>
+          
+          <input class="field lastname" type="text" placeholder="Last Name">
+          <span class="hidden error error__lastname-empty">Last Name cannot be empty</span>
+          
+          <input class="field email" type="email" placeholder="Email Address">
+          <span class="hidden error error__email-empty">Email cannot be empty</span>
+          <span class="hidden error error__email-invalid">Invalid email</span>
+          
+          <input class="field password" type="password" placeholder="Password">
+          <span class="hidden error error__password-empty">Password cannot be empty</span>
+          
+          <input class="submit-btn" type="button" value="Claim your free trial">
+        </form>
+        <div class="signup-form__tos">
+          <p>By clicking the button, you are agreeing to our <a href="#">Terms of Service</a></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="index.js"></script>
+</body>
+</html>
